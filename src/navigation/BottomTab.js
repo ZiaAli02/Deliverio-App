@@ -10,13 +10,13 @@ import MyOrder from "../screens/MyOrder";
 
 const BottomTabs= createBottomTabNavigator();
 
-const BottomTab=()=>
+const BottomTab=({navigation})=>
 {
   return(
     <BottomTabs.Navigator
        screenOptions={{
         tabBarActiveTintColor:"#f03a3a",
-        tabBarInactiveTintColor:"black"
+        tabBarInactiveTintColor:"black",
        }}
      >
         <BottomTabs.Screen
@@ -26,15 +26,15 @@ const BottomTab=()=>
             headerShown: false,
             tabBarLabel: "Home",
             
-            tabBarIcon: ({color})=>{
+            tabBarIcon: ({color})=>(
                 <Icon
-                  name="Home"
+                  name="home"
                   type="material"
                   color={color}
-                  size={50}
+                  size={20}
                   onPress={()=>{navigation.navigate("HomeScreen")}}
                 />
-            }
+            )
            }}
         />
 
@@ -45,15 +45,15 @@ const BottomTab=()=>
             headerShown: false,
             tabBarLabel: "Search",
             showIcon: true ,
-            tabBarIcon: ({color})=>{
+            tabBarIcon: ({color})=>(
                 <Icon
-                  name="Search"
+                  name="search"
                   type="material"
                   color={color}
-                  size={50}
+                  size={20}
                   onPress={()=>{navigation.navigate("SearchScreen")}}
                 />
-            }
+            )
            }}
         />
 
@@ -65,15 +65,15 @@ const BottomTab=()=>
             headerShown: false,
                tabBarLabel: "MyOrder",
                showIcon: true ,
-               tabBarIcon: ({color})=>{
+               tabBarIcon: ({color})=>(
                    <Icon
-                   name="Shopping Bag"
+                   name="view-list"
                    type="material"
                    color={color}
-                   size={50}
+                   size={20}
                    onPress={()=>{navigation.navigate("MyOrder")}}
                    />
-                }
+               )
             }}
         />
             <BottomTabs.Screen
@@ -81,17 +81,17 @@ const BottomTab=()=>
                        component={MyAccount}
                        options={{
                         headerShown: false,
-                        tabBarLabel: "Person",
+                        tabBarLabel: "Account",
                         showIcon: true ,
-                        tabBarIcon: ({color})=>{
+                        tabBarIcon: ({color})=>(
                             <Icon
-                              name="Person"
+                              name="person"
                               type="material"
                               color={color}
-                              size={50}
+                              size={20}
                               onPress={()=>{navigation.navigate("MyAccount")}}
                             />
-                        }
+                        )
                        }}
                     />
     </BottomTabs.Navigator>

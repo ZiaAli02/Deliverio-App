@@ -1,9 +1,8 @@
 import React,{useRef,useState} from 'react';
 
-import {ScrollView,View, Text, StyleSheet, TextInput} from 'react-native';
+import {ScrollView,View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {colors, parameters} from '../global/Styles';
 import {Icon, withBadge} from 'react-native-elements';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const HomeHeader= ({navigation,props}) =>
 {
@@ -15,14 +14,15 @@ const HomeHeader= ({navigation,props}) =>
            <Text style={{color:colors.cardBackground, fontSize:20, fontWeight:"bold"}}>Deliverio</Text>
           </View>
 
-          <View style={{alignItems:"center",justifyContent:"center", marginRight:15}}>
+          <TouchableOpacity style={{alignItems:"center",justifyContent:"center", marginRight:15,marginTop:5}} 
+          onPress={()=>{navigation.navigate('MyOrder')}}>
             <BadgeIcon
             type="material-community"
             name="cart"
             size={30}
             color={colors.cardBackground}
             />
-          </View>
+          </TouchableOpacity>
         </View>
     );
 }
