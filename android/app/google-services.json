@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "249819447448",
+    "project_id": "deliverio-8aab0",
+    "storage_bucket": "deliverio-8aab0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249819447448:android:1a99d7d223c8ea502f50ed",
+        "android_client_info": {
+          "package_name": "com.deliverio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249819447448-f3mg42vmdkkibr4fc5acs1ao9omt7sg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv1UxC7mbNj7tjBSDMW_P5FW_U-WKjKXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249819447448-f3mg42vmdkkibr4fc5acs1ao9omt7sg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
